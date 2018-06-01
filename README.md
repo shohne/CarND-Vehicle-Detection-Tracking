@@ -1,7 +1,7 @@
-## Advanced Lane Finding
+## Vehicle Detection and Tracking
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-This repo contains the written code to complete the project **Advanced Lane Finding** on Udacity Self-Driving Car Nanodegree. The goal is to detect lane lines from images (and video) taken from a camera at the front of a car.
+This repo contains the written code to complete the project **Vehicle Detection and Tracking** on Udacity Self-Driving Car Nanodegree. The goal is to detect lane lines from images (and video) taken from a camera at the front of a car.
 
 Prerequisites
 ---
@@ -11,7 +11,7 @@ Installation
 ---
 First, clone the repository:
 ```
-git clone https://github.com/shohne/CarND-Advanced-Lane-Lines.git
+git clone https://github.com/shohne/CarND-Vehicle-Detection-Tracking.git
 ```
 Change current directory:
 ```
@@ -21,7 +21,7 @@ Create a conda environment with all dependencies:
 ```
 conda env create -f environment.yml
 ```
-The name of the created environment is *lane-advanced*.
+The name of the created environment is *vehicle-detection*.
 
 Running the Notebook
 ---
@@ -31,7 +31,7 @@ source activate lane-advanced
 ```
 And run Jupyter Notebook:
 ```
-jupyter notebook P4.ipynb
+jupyter notebook P5.ipynb
 ```
 Implementation Details
 ---
@@ -45,6 +45,6 @@ As an example of the produced video running the iPython Notebook:
 
 Some useful files and folders in this project:
 
-- **P4.ipynb** iPython Notebook with the implementation;
+- **P5.ipynb** iPython Notebook with the implementation;
 - **environment.yml** used to create conda environment;
 - **report.md** detailed description of pipeline;

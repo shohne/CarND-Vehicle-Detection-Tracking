@@ -1,4 +1,4 @@
-# **Advanced Lane Finding**
+# **Vehicle Detection and Tracking**
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
