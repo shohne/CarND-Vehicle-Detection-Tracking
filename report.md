@@ -1,9 +1,15 @@
 # **Vehicle Detection and Tracking**
 
 The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
+* Make a pipeline that finds vehicles on the road
 
-### Pipeline Overview
+### Extrating Image Features
+
+The key point to recognize objects on image is extract usefull properties and compare with known patterns. As examples, it could be remember 
+
+### Model to Recognize Vehicles
+
+### Pipeline
 
 Before processing each image, it is necessary to calibrate the camera to correct from distortions. This happens in **getCalibrationParameters** method where it is possibleto get parameters to adjust every image processed in the pipeline.
 
@@ -24,31 +30,6 @@ Each image or video frame is processed in **pipeline** method that following the
 13. Find **curvature** (method **calculate_curvature**) and position in lane (method calculate_center_dist).
 14. Draw green region to indicate detected lane area;
 15. Return unwarped image.
-
-### Detailed Steps
-Visualize the pipeline showing the result for each step. Consider the original image:
-
-![](test_images/straight_lines1.jpg)
-
-Following pipeline steps, We obtain:
-
-![](output/straight_lines1_0.jpg)
-
-![](output/straight_lines1_0.jpg)
-
-![](output/straight_lines1_1.jpg)
-
-![](output/straight_lines1_2.jpg)
-
-![](output/straight_lines1_3.jpg)
-
-![](output/straight_lines1_4.jpg)
-
-![](output/straight_lines1_5.jpg)
-
-![](output/straight_lines1_6.jpg)
-
-![](output/straight_lines1_F.jpg)
 
 ### Video
 There is a important step in pipeline that checks if prediction values makes sense and to protect against suddenly changes calculate the mean of historical values for curvature. Only for a temporal sequence of images it is possible to see this behavior. In:

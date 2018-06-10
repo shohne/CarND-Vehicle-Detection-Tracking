@@ -27,7 +27,7 @@ Running the Notebook
 ---
 Activate the created conda environment:
 ```
-source activate lane-advanced
+source activate vehicle-detection
 ```
 And run Jupyter Notebook:
 ```
