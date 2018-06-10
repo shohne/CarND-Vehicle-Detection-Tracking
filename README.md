@@ -1,7 +1,7 @@
 ## Vehicle Detection and Tracking
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-This repo contains the written code to complete the project **Vehicle Detection and Tracking** on Udacity Self-Driving Car Nanodegree. The goal is to detect lane lines from images (and video) taken from a camera at the front of a car.
+This repo contains the written code to complete the project **Vehicle Detection and Tracking** on Udacity Self-Driving Car Nanodegree. The goal is to detect vehicles from images (and video) taken from a camera at the front of a car.
 
 Prerequisites
 ---
