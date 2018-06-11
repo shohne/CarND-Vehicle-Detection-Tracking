@@ -1,7 +1,7 @@
 ## Vehicle Detection and Tracking
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-This repo contains the written code to complete the project **Vehicle Detection and Tracking** on Udacity Self-Driving Car Nanodegree. The goal is to detect vehicles from images (and video) taken from a camera at the front of a car.
+This repo contains the written code to complete the project **Vehicle Detection and Tracking** on Udacity Self-Driving Car Nanodegree. The goal is to detect vehicles from images (and video) taken from a camera placed at the front of the car.
 
 Prerequisites
 ---
@@ -46,7 +46,7 @@ As an example of the produced video running the iPython Notebook:
 Some useful files and folders in this project:
 
 - **P5.ipynb** iPython Notebook with the implementation;
-- **dataset.npz** extrated features from dataset pre-computed;
+- **dataset.npz** extracted features from dataset pre-computed;
 - **model.pkl** SVM Model pre-trained. To train again, remove this file;
 - **environment.yml** used to create conda environment;
 - **report.md** detailed description of pipeline;
