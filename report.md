@@ -9,11 +9,11 @@ The key point to recognize objects on image is extract usefull properties and co
 
 As example, for the image:
 
-[Car in Grayscale](test_images/i1.png)
+![Car in Grayscale](test_images/i1.png)
 
 The HOG for some choose parameters is:
 
-[HOG](test_images/i2.png)
+![HOG](test_images/i2.png)
 
 In this project, We choose a very simple image feature extractor. First, convert image to grayscale and compute HOG, then use a SVM Model to predict if HOG descriptor is from a Vehicle or not. We choose the following parameter for Hog function:
 
@@ -26,17 +26,17 @@ In this project, We choose a very simple image feature extractor. First, convert
 
 We have trained a SVM Model to detect Vehicles with dataset provided by Udacity. This dataset contains 18.000 (~) small color images classified as Vehicle or not. Each image is 64 x 64 pixels as:
 
-[Car 1](test_images/c1.png)
+![Car 1](test_images/c1.png)
 
-[Car 2](test_images/c2.png)
+![Car 2](test_images/c2.png)
 
-[Car 3](test_images/c3.png)
+![Car 3](test_images/c3.png)
 
 And there are not vehicles images too:
 
-[Not Car 1](test_images/nc1.png)
+![Not Car 1](test_images/nc1.png)
 
-[Not Car 2](test_images/nc2.png)
+![Not Car 2](test_images/nc2.png)
 
 ### Model
 
@@ -54,17 +54,17 @@ A pre-trained model that could save us time is on file **model.pkl**. To force p
 
 The model has performed well in the dataset. But this say nothing about its performance on images taken from other camera and conditions. As a sanity check, We extract patchs from known cars and verify if model give the corrected prediction:
 
-[Original Image](test_images/test1.jpg)
+![Original Image](test_images/test1.jpg)
 
-[White Car] (test_images/white_car.jpg)
-
-Prediction: VEHICLE
-
-[White Car] (test_images/black_car.jpg)
+![White Car](test_images/white_car.jpg)
 
 Prediction: VEHICLE
 
-[Far] (test_images/far_car.jpg)
+![White Car](test_images/black_car.jpg)
+
+Prediction: VEHICLE
+
+![Far](test_images/far_car.jpg)
 
 Prediction: NOT a VEHICLE
 
@@ -74,13 +74,13 @@ As We can see, the model cannot detect a car if it is far (and image is small).
 
 Our model is able to predict if a small images (64 x 64 pixels) is a vehicle, but real images are larger. To detect cars in full images, We use function **slide_window** that helps to crop original image in many small patchs and predict if each small patch is a vehicle. An example could be seen in:
 
-[Far] (test_images/slide_window.png)
+![Window](test_images/slide_window.png)
 
 The trained model does not perform well on non-vehicles images and detect it as cars and, as result, the program obtains a lot of false positives. To avoid them, there are funcions *add_heat*, *apply_threshold* and *draw_labeled_bboxes*. the ideia is report as vehicles only regions that are classified as vehicles in many windows. 
 
-[Car Positions] (test_images/heat_map_1.png)
+![Car Positions](test_images/heat_map_1.png)
 
-[Heat Map] (test_images/heat_map_2.png)
+![Heat Map](test_images/heat_map_2.png)
 
 Now, to report vehicles in a movie we use an additional method that stored detected vehicles in previous frames to compute an *average* and calculate the heat map.
 
