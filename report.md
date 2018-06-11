@@ -56,15 +56,15 @@ The model has performed well in the dataset. But this say nothing about its perf
 
 ![Original Image](test_images/test1.jpg)
 
-![White Car](test_images/white_car.jpg)
+![White Car](test_images/white_car.png)
 
 Prediction: VEHICLE
 
-![White Car](test_images/black_car.jpg)
+![White Car](test_images/black_car.png)
 
 Prediction: VEHICLE
 
-![Far](test_images/far_car.jpg)
+![Far](test_images/far_car.png)
 
 Prediction: NOT a VEHICLE
 
@@ -77,8 +77,6 @@ Our model is able to predict if a small images (64 x 64 pixels) is a vehicle, bu
 ![Window](test_images/slide_window.png)
 
 The trained model does not perform well on non-vehicles images and detect it as cars and, as result, the program obtains a lot of false positives. To avoid them, there are funcions *add_heat*, *apply_threshold* and *draw_labeled_bboxes*. the ideia is report as vehicles only regions that are classified as vehicles in many windows. 
-
-![Car Positions](test_images/heat_map_1.png)
 
 ![Heat Map](test_images/heat_map_2.png)
 
