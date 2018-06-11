@@ -46,5 +46,7 @@ As an example of the produced video running the iPython Notebook:
 Some useful files and folders in this project:
 
 - **P5.ipynb** iPython Notebook with the implementation;
+- **dataset.npz** extrated features from dataset pre-computed;
+- **model.pkl** SVM Model pre-trained. To train again, remove this file;
 - **environment.yml** used to create conda environment;
 - **report.md** detailed description of pipeline;
